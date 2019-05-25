@@ -152,3 +152,9 @@ C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\o
 C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\obj\Debug\TP_WEB_LESCANO_CASSANO.csproj.CopyComplete
 C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\obj\Debug\TP_WEB_LESCANO_CASSANO.dll
 C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\obj\Debug\TP_WEB_LESCANO_CASSANO.pdb
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Negocio.dll
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Dominio.dll
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\AccesoDatos.dll
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Negocio.pdb
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Dominio.pdb
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\AccesoDatos.pdb
