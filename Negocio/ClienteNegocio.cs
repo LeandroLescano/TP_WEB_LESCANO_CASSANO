@@ -37,5 +37,28 @@ namespace Negocio
                 accesoDatos.cerrarConexion();
             }
         }
-    }
+		public bool comprobarDNI(int DNI)
+		{
+			AccesoDatosManager accesoDatos = new AccesoDatosManager();
+			try
+			{
+				accesoDatos.setearConsulta("SELECT * FROM CLIENTES WHERE DNI = '" + DNI + "'");
+				accesoDatos.abrirConexion();
+				accesoDatos.ejecutarConsulta();
+				while (accesoDatos.Lector.Read())
+				{
+					return true;
+				}
+				return false;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+			finally
+			{
+				accesoDatos.cerrarConexion();
+			}
+		}
+	}
 }

@@ -8,7 +8,7 @@ namespace Dominio
 {
     public class Voucher
     {
-        public int Codigo { get; set; }
+        public int ID { get; set; }
         public string CodigoVoucher { get; set; }
         public bool Estado { get; set; }
         public Cliente Cliente { get; set; }
