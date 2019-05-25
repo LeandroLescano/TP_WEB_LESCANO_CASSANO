@@ -1,0 +1,11 @@
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\Negocio.dll
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\AccesoDatos.dll
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\Dominio.dll
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\AccesoDatos.pdb
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\Dominio.pdb
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.dll
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.pdb

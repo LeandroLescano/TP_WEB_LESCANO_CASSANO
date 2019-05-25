@@ -1,0 +1,6 @@
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Dominio\bin\Debug\Dominio.dll
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Dominio\obj\Debug\Dominio.dll
+C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\Dominio\obj\Debug\Dominio.pdb

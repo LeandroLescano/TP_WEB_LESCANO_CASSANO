@@ -7,7 +7,7 @@
     <div class="input-group mb-3">
         <asp:Textbox ID="txtCodigo" runat="server" class="form-control" placeholder="0000000123456789"></asp:TextBox>
         <div class="input-group-append">
-            <asp:Button runat="server" class="btn btn-outline-dark" ID="btnSiguiente" Text="Siguiente" />
+            <asp:Button runat="server" class="btn btn-outline-dark" ID="btnSiguiente" Text="Siguiente" OnClick="btnSiguiente_Click" />
         </div>
     </div>
     <%--<asp:Button  runat="server" Text="Button" />--%>
