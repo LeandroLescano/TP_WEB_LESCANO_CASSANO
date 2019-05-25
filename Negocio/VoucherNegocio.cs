@@ -33,5 +33,29 @@ namespace Negocio
                 accesoDatos.cerrarConexion();
             }
         }
+
+        public static bool comprobarVoucher(string Codigo)
+        {
+            AccesoDatosManager accesoDatos = new AccesoDatosManager();
+            try
+            {
+                accesoDatos.setearConsulta("SELECT * FROM VOUCHERS WHERE CodigoVoucher = "+ Codigo);
+                accesoDatos.abrirConexion();
+                accesoDatos.ejecutarConsulta();
+                while (accesoDatos.Lector.Read())
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+        }
     }
 }
