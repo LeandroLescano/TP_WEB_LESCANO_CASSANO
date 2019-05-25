@@ -36,11 +36,11 @@ namespace TP_WEB_LESCANO_CASSANO
             {
                 Session.Add("CodigoVoucher", txtCodigo.Text);
                 string CodigoVoucher = Session["CodigoVoucher"].ToString();
-                Response.Redirect("~/Formulario.aspx");
+                Response.Redirect("~/Premios.aspx");
             }
             else
             {
-                
+                lblError.Text = "Parece que tu código es incorrecto. Vuelve a intentarlo!";
             }
 		}
 	}

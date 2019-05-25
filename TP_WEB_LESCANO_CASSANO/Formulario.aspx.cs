@@ -15,6 +15,7 @@ namespace TP_WEB_LESCANO_CASSANO
 		protected void altaVoucherCliente(Cliente cli, Voucher vou)
 		{
 			ClienteNegocio negocio = new ClienteNegocio();
+            cli.Nombre = txtNombre.Text;
 			cli.Apellido = txtApellido.Text;
 			cli.Ciudad = txtCiudad.Text;
 			cli.CodigoPostal = txtCP.Text;
@@ -22,7 +23,10 @@ namespace TP_WEB_LESCANO_CASSANO
 			cli.DNI = Convert.ToInt32(txtDNI.Text);
 			cli.Email = txtEmail.Text;
 			cli.FechaRegistro = System.DateTime.Now;
+            vou.CodigoVoucher = Session["CodigoVoucher"].ToString();
+            vou.Cliente = new Cliente();
 			vou.Cliente.ID = negocio.agregarCliente(cli);
+            vou.Producto = new Producto();
 			vou.Producto.ID = Convert.ToInt32(Session["Producto"].ToString());
 			vou.FechaRegistro = System.DateTime.Now;
 		}
@@ -41,6 +45,7 @@ namespace TP_WEB_LESCANO_CASSANO
 			if (!negocio.comprobarDNI(Convert.ToInt32((txtDNI.Text))))
 				{
 				altaVoucherCliente(cliente, voucher);
+                //ERROR CON FOREIGN KEY
 				negocioV.agregarVoucher(voucher);
 				Response.Redirect("~/Felicitaciones.aspx");
 			}

@@ -48,9 +48,12 @@ BEGIN
 	INSERT INTO Clientes (DNI, Nombre, Apellido, Email, Direccion, Ciudad, CodigoPostal, FechaRegistro) VALUES (@DNI, @Nombre, @Apellido, @Email, @Direccion, @Ciudad, @CodigoPostal, @Fecha)
 	SELECT SCOPE_IDENTITY(); 
 END
+
+exec agregarCliente 12345678, 'Jorge', 'ElCurioso', 'curiosin@gmail.com', 'Calle 321', 'Miami', '8888', 
+
 GO
 CREATE PROCEDURE agregarVoucher(
-	@Codigo BIGINT,
+	@Codigo VARCHAR(32),
 	@Cliente BIGINT,
 	@Producto BIGINT,
 	@Fecha DATETIME
@@ -68,4 +71,10 @@ BEGIN
    WAITFOR DELAY '00:00:00.002'
 END;
 
-Select * from Vouchers
+Select * from Vouchers where CodigoVoucher = 'C6A91BA573BE0E400CAED80A835C71CB'
+
+Select * from Clientes
+
+delete from clientes
+
+INSERT INTO 

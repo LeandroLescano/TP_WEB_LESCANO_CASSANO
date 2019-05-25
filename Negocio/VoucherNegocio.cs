@@ -17,6 +17,7 @@ namespace Negocio
             {
                 accesoDatos.setearSP("agregarVoucher");
                 accesoDatos.Comando.Parameters.Clear();
+                accesoDatos.Comando.Parameters.AddWithValue("@Codigo", nuevo.CodigoVoucher);
                 accesoDatos.Comando.Parameters.AddWithValue("@Cliente",nuevo.Cliente.ID);
                 accesoDatos.Comando.Parameters.AddWithValue("@Producto", nuevo.Producto.ID);
                 accesoDatos.Comando.Parameters.AddWithValue("@Fecha", nuevo.FechaRegistro);
