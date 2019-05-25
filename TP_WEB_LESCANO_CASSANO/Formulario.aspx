@@ -31,6 +31,6 @@
 <asp:CheckBox ID="ckbCondiciones" runat="server" /><asp:Label ID="lblCondiciones" runat="server" Text="Acepto los términos y condiciones de uso."></asp:Label>
     <br />
     <br />
-    <button type="button" class="btn btn-info">Participá!</button>
+    <asp:Button runat="server" class="btn btn-info" ID="btnParticipar" Text="Participá!" OnClick="btnParticipar_Click" />
 </asp:Content>
 

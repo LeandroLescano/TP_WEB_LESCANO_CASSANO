@@ -117,6 +117,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
+    <Content Include="Felicitaciones.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Formulario.aspx" />
     <Content Include="Global.asax" />
@@ -168,6 +169,13 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Felicitaciones.aspx.cs">
+      <DependentUpon>Felicitaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Felicitaciones.aspx.designer.cs">
+      <DependentUpon>Felicitaciones.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Formulario.aspx.cs">
       <DependentUpon>Formulario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
