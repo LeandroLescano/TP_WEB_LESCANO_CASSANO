@@ -158,3 +158,9 @@ C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO
 C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Negocio.pdb
 C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Dominio.pdb
 C:\Users\Juan\Desktop\UTN\Programacion III\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\AccesoDatos.pdb
+C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Negocio.dll
+C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Dominio.dll
+C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\AccesoDatos.dll
+C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Negocio.pdb
+C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\Dominio.pdb
+C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\TP_WEB_LESCANO_CASSANO\bin\AccesoDatos.pdb

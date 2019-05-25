@@ -9,6 +9,7 @@
         <div class="input-group-append">
             <asp:Button runat="server" class="btn btn-outline-dark" ID="btnSiguiente" Text="Siguiente" OnClick="btnSiguiente_Click" />
         </div>
+            <button class="btn btn-outline-dark" onclick="comprobarVoucher()" >Siguienteee</button>
     </div>
     <%--<asp:Button  runat="server" Text="Button" />--%>
 </asp:Content>

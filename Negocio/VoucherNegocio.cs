@@ -34,12 +34,12 @@ namespace Negocio
             }
         }
 
-        public static bool comprobarVoucher(string Codigo)
+        public bool comprobarVoucher(string Codigo)
         {
             AccesoDatosManager accesoDatos = new AccesoDatosManager();
             try
             {
-                accesoDatos.setearConsulta("SELECT * FROM VOUCHERS WHERE CodigoVoucher = "+ Codigo);
+                accesoDatos.setearConsulta("SELECT * FROM VOUCHERS WHERE CodigoVoucher = '"+ Codigo + "'");
                 accesoDatos.abrirConexion();
                 accesoDatos.ejecutarConsulta();
                 while (accesoDatos.Lector.Read())
