@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace TP_WEB_LESCANO_CASSANO
 {
-	public partial class Formulario : System.Web.UI.Page
+	public partial class Felicitaciones : System.Web.UI.Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
 
 		}
 
-		protected void btnParticipar_Click(object sender, EventArgs e)
+		protected void btnInicio_Click(object sender, EventArgs e)
 		{
-			Response.Redirect("~/Felicitaciones.aspx");
+			Response.Redirect("~/Index.aspx");
 		}
 	}
 }
