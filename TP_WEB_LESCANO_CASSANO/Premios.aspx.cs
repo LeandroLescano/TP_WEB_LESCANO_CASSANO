@@ -5,14 +5,18 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Dominio;
+using Negocio;
+using System.Text;
 
 namespace TP_WEB_LESCANO_CASSANO
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        public List<Producto> listado;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ProductoNegocio negocio = new ProductoNegocio();
+            listado = negocio.listarProductos();
         }
 
         protected void seleccionarProd(int ID)

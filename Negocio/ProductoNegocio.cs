@@ -8,7 +8,7 @@ using AccesoDatos;
 
 namespace Negocio
 {
-    class ProductoNegocio
+    public class ProductoNegocio
     {
         public List<Producto> listarProductos()
         {

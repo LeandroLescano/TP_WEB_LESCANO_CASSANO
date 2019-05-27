@@ -15,31 +15,17 @@ namespace TP_WEB_LESCANO_CASSANO
 
 		}
 
-        [System.Web.Services.WebMethod]
-        private static string comprobar(string Codigo)
-        {
-            VoucherNegocio negocio = new VoucherNegocio();
-            if (negocio.comprobarVoucher(Codigo))
-            {
-                return "Tu voucher es legal";
-            }
-            else
-            {
-                return "Tu voucher es trucho";
-            }
-        }
-
         protected void btnSiguiente_Click(object sender, EventArgs e)
 		{
             VoucherNegocio negocio = new VoucherNegocio();
             if (negocio.comprobarVoucher(txtCodigo.Text))
             {
                 Session.Add("CodigoVoucher", txtCodigo.Text);
-                string CodigoVoucher = Session["CodigoVoucher"].ToString();
                 Response.Redirect("~/Premios.aspx");
             }
             else
             {
+//hacer otra pagina que diga que el codigo es incorrecto o ya fue utilizado (ya modifiqué el ComprobarVoucher para que si el estado es 1, retorne false)
                 lblError.Text = "Parece que tu código es incorrecto. Vuelve a intentarlo!";
             }
 		}

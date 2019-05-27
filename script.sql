@@ -48,9 +48,6 @@ BEGIN
 	INSERT INTO Clientes (DNI, Nombre, Apellido, Email, Direccion, Ciudad, CodigoPostal, FechaRegistro) VALUES (@DNI, @Nombre, @Apellido, @Email, @Direccion, @Ciudad, @CodigoPostal, @Fecha)
 	SELECT SCOPE_IDENTITY(); 
 END
-
-exec agregarCliente 12345678, 'Jorge', 'ElCurioso', 'curiosin@gmail.com', 'Calle 321', 'Miami', '8888', 
-
 GO
 CREATE PROCEDURE agregarVoucher(
 	@Codigo VARCHAR(32),
@@ -73,8 +70,11 @@ END;
 
 Select * from Vouchers where CodigoVoucher = 'C6A91BA573BE0E400CAED80A835C71CB'
 
-Select * from Clientes
+SELECT * FROM CLIENTES
+SELECT * FROM Vouchers
 
 delete from clientes
 
-INSERT INTO 
+SELECT * FROM Productos
+
+UPDATE Productos SET Descripcion='Celular Xiaomi Redmi Note 7 64Gb 25mp' where id=3

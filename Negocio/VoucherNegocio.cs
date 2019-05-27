@@ -44,6 +44,10 @@ namespace Negocio
                 accesoDatos.ejecutarConsulta();
                 while (accesoDatos.Lector.Read())
                 {
+                    if(accesoDatos.Lector.GetBoolean(2))
+                    {
+                        return false;
+                    }
                     return true;
                 }
                 return false;

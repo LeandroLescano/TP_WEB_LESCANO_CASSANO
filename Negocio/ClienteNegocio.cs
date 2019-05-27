@@ -37,17 +37,27 @@ namespace Negocio
                 accesoDatos.cerrarConexion();
             }
         }
-		public bool comprobarDNI(int DNI)
+
+        public bool comprobarDNI(int DNI, Cliente cliente)
 		{
 			AccesoDatosManager accesoDatos = new AccesoDatosManager();
 			try
 			{
-				accesoDatos.setearConsulta("SELECT * FROM CLIENTES WHERE DNI = '" + DNI + "'");
+				accesoDatos.setearConsulta("SELECT * FROM CLIENTES WHERE DNI = " + DNI);
 				accesoDatos.abrirConexion();
 				accesoDatos.ejecutarConsulta();
 				while (accesoDatos.Lector.Read())
 				{
-					return true;
+                    cliente.ID = Convert.ToInt32(accesoDatos.Lector.GetInt64(0));
+                    cliente.DNI = accesoDatos.Lector.GetInt32(1);
+                    cliente.Nombre = accesoDatos.Lector.GetString(2);
+                    cliente.Apellido = accesoDatos.Lector.GetString(3);
+                    cliente.Email = accesoDatos.Lector.GetString(4);
+                    cliente.Direccion = accesoDatos.Lector.GetString(5);
+                    cliente.Ciudad = accesoDatos.Lector.GetString(6);
+                    cliente.CodigoPostal = accesoDatos.Lector.GetString(7);
+                    cliente.FechaRegistro = accesoDatos.Lector.GetDateTime(8);
+                    return true;
 				}
 				return false;
 			}
