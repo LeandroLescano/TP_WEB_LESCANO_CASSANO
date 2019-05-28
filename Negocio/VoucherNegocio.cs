@@ -19,7 +19,7 @@ namespace Negocio
                 accesoDatos.Comando.Parameters.Clear();
                 accesoDatos.Comando.Parameters.AddWithValue("@Codigo", nuevo.CodigoVoucher);
                 accesoDatos.Comando.Parameters.AddWithValue("@Cliente",nuevo.Cliente.ID);
-                accesoDatos.Comando.Parameters.AddWithValue("@Producto", nuevo.Producto.ID);
+                accesoDatos.Comando.Parameters.AddWithValue("@Producto",nuevo.Producto.ID);
                 accesoDatos.Comando.Parameters.AddWithValue("@Fecha", nuevo.FechaRegistro);
                 accesoDatos.abrirConexion();
                 accesoDatos.ejecutarAccion();

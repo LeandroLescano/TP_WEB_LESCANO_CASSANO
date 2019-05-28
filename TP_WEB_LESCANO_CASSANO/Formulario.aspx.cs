@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net.Mail;
 using Negocio;
 using Dominio;
 
@@ -41,7 +42,22 @@ namespace TP_WEB_LESCANO_CASSANO
             vou.Producto.ID = Convert.ToInt32(Session["Producto"].ToString());
             vou.FechaRegistro = System.DateTime.Now;
         }
+		protected void mandarMail (string email, string codvou)
+		{
+			MailMessage mail = new MailMessage();
+			SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
+			mail.From = new MailAddress("promocode.noreply@gmail.com");
+			mail.To.Add(email);
+			mail.Subject = "Sorteo";
+			mail.Body = "Felicidades! estas oficialmente participando del sorteo con el codigo'" + codvou + "'.";
+
+			SmtpServer.Port = 587;
+			SmtpServer.Credentials = new System.Net.NetworkCredential("promocode.noreply@gmail.com", "promocode123");
+			SmtpServer.EnableSsl = true;
+
+			SmtpServer.Send(mail);
+		}
 		protected void btnParticipar_Click(object sender, EventArgs e)
 		{
 			ClienteNegocio negocio = new ClienteNegocio();
@@ -51,7 +67,9 @@ namespace TP_WEB_LESCANO_CASSANO
 			if (!negocio.comprobarDNI(Convert.ToInt32((txtDNI.Text)), cliente))
 			{
 				altaCliente(cliente);
+				cliente.ID = negocio.agregarCliente(cliente);
                 altaVoucher(voucher, cliente.ID);
+				mandarMail(cliente.Email, voucher.CodigoVoucher);
 				negocioV.agregarVoucher(voucher);
 				Response.Redirect("~/Felicitaciones.aspx");
 			}
@@ -59,7 +77,8 @@ namespace TP_WEB_LESCANO_CASSANO
 			{
                 altaVoucher(voucher, cliente.ID);
                 negocioV.agregarVoucher(voucher);
-                Response.Redirect("~/Felicitaciones.aspx");
+				mandarMail(cliente.Email, voucher.CodigoVoucher);
+				Response.Redirect("~/Felicitaciones.aspx");
             }
 		}
 
