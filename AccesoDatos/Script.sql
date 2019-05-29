@@ -33,6 +33,16 @@ CREATE TABLE Vouchers(
     FechaRegistro DATETIME NULL DEFAULT NULL
 );
 GO
+SET IDENTITY_INSERT [dbo].[Productos] ON 
+GO
+INSERT [dbo].[Productos] ([Id], [Titulo], [Descripcion], [URLImagen]) VALUES (1, N'TV 55'''' Samsung', N'Televisor Samsung', N'https://http2.mlstatic.com/tv-led-samsung-55-smart-k5500-full-hd-quadcore-netflix-D_NQ_NP_893846-MLA26427341449_112017-F.jpg')
+GO
+INSERT [dbo].[Productos] ([Id], [Titulo], [Descripcion], [URLImagen]) VALUES (2, N'Aire Acondicionado Samsung', N'Aire Acondicionado Inverter', N'http://www.compraderas.com.bo/wp-content/uploads/2016/11/samsung_aire_acondicionado_split_18000_btu.jpg')
+GO
+INSERT [dbo].[Productos] ([Id], [Titulo], [Descripcion], [URLImagen]) VALUES (3, N'Xiaomi Redmi Note 7 (Blue)', N'Celular Xiaomi Redmi Note 7 64Gb 25mp', N'https://images-na.ssl-images-amazon.com/images/I/61LiKwLWbqL._SX466_.jpg')
+GO
+SET IDENTITY_INSERT [dbo].[Productos] OFF
+GO
 CREATE PROCEDURE agregarCliente(
     @DNI INT,
     @Nombre VARCHAR(50),
@@ -50,7 +60,7 @@ BEGIN
 END
 GO
 CREATE PROCEDURE agregarVoucher(
-	@Codigo BIGINT,
+	@Codigo VARCHAR(32),
 	@Cliente BIGINT,
 	@Producto BIGINT,
 	@Fecha DATETIME
@@ -61,11 +71,9 @@ BEGIN
 END
 
 DECLARE @cnt INT = 0;
-WHILE @cnt < 1000
+WHILE @cnt < 100
 BEGIN
    INSERT INTO TP_WEB.dbo.Vouchers (CodigoVoucher) VALUES (DEFAULT);
    SET @cnt = @cnt + 1;
    WAITFOR DELAY '00:00:00.002'
 END;
-
-Select * from Vouchers

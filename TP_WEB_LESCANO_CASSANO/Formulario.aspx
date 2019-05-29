@@ -55,6 +55,16 @@
             }
         }
 
+
+                    $( document ).ready(function() {
+                $( ".txtOnly" ).keypress(function(e) {
+                    var key = e.keyCode;
+                    if (key >= 48 && key <= 57) {
+                        e.preventDefault();
+                    }
+                });
+            });
+
         function enFoco(text) {
             objeto = document.getElementById(text);
             if (objeto.classList.contains("border-success")) {
@@ -138,7 +148,7 @@
                 <asp:TextBox ID="txtNombre" runat="server" class="form-control txtOnly" placeholder="José" onKeyUp="javascript:validarVacio(this.id)" onblur="javascript:sacarFoco(this.id)" onfocus="javascript:enFoco(this.id)"></asp:TextBox>
             </div>
             <div class="col-sm-4">
-                <asp:TextBox ID="txtApellido" runat="server" class="form-control" placeholder="Pérez" onKeyUp="javascript:validarVacio(this.id)" onblur="javascript:sacarFoco(this.id)" onfocus="javascript:enFoco(this.id)"></asp:TextBox>
+                <asp:TextBox ID="txtApellido" runat="server" class="form-control txtOnly" placeholder="Pérez" onKeyUp="javascript:validarVacio(this.id)" onblur="javascript:sacarFoco(this.id)" onfocus="javascript:enFoco(this.id)"></asp:TextBox>
             </div>
             <div class="col-sm-4">
                 <asp:TextBox ID="txtEmail" runat="server" class="form-control" onKeyUp="javascript:validarEmail()" onfocus="javascript:validarEmail()" onblur="javascript:sacarFoco(this.id)" placeholder="jperez@gmail.com"></asp:TextBox>
@@ -161,7 +171,7 @@
                 <asp:TextBox ID="txtDireccion" runat="server" class="form-control" placeholder="Chacabuco 403" onKeyUp="javascript:validarVacio(this.id)" onblur="javascript:sacarFoco(this.id)" onfocus="javascript:enFoco(this.id)"></asp:TextBox>
             </div>
             <div class="col-sm-4">
-                <asp:TextBox ID="txtCiudad" runat="server" class="form-control" placeholder="Colegiales" onKeyUp="javascript:validarVacio(this.id)" onblur="javascript:sacarFoco(this.id)" onfocus="javascript:enFoco(this.id)"></asp:TextBox>
+                <asp:TextBox ID="txtCiudad" runat="server" class="form-control txtOnly" placeholder="Colegiales" onKeyUp="javascript:validarVacio(this.id)" onblur="javascript:sacarFoco(this.id)" onfocus="javascript:enFoco(this.id)"></asp:TextBox>
             </div>
             <div class="col-sm-4">
                 <asp:TextBox ID="txtCP" runat="server" class="form-control" placeholder="1648" MaxLength="8" onKeyUp="javascript:validarVacio(this.id)" onblur="javascript:sacarFoco(this.id)" onfocus="javascript:enFoco(this.id)"></asp:TextBox>
