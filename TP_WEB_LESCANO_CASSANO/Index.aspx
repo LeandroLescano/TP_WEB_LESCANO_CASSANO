@@ -9,6 +9,7 @@
             <asp:Button runat="server" class="btn btn-info" ID="btnSiguiente" Text="Siguiente" OnClick="btnSiguiente_Click" />
         </div>
     </div>
+
     <asp:Label ID="lblError" runat="server" Style="font-size: 15px;" Text=""></asp:Label>
 </asp:Content>
 

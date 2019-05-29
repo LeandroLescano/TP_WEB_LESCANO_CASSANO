@@ -46,7 +46,7 @@
                 document.getElementById("<%=txtDireccion.ClientID%>"),
                 document.getElementById("<%=txtCiudad.ClientID%>"),
                 document.getElementById("<%=txtCP.ClientID%>")]
-            for (var i = 1; i < 7; i++) {
+            for (var i = 0; i < 7; i++) {
                 if (objeto[i].value != "" && objeto[i].value.length >= 3) {
                     objeto[i].className += " border border-success";
                 }
@@ -54,7 +54,6 @@
             if (!objeto[0].classList.contains("border-success")) {
                 document.getElementById("<%=btnParticipar.ClientID%>").disabled = true;
             }
-
         });
 
         function sacarFoco() {
@@ -166,14 +165,14 @@
             </div>
         </div>
         <br />
-        <asp:CheckBox ID="ckbCondiciones" runat="server" /><asp:Label ID="lblCondiciones" runat="server" Text=" Acepto los términos y condiciones de uso."></asp:Label>
+<%--        <asp:CheckBox ID="ckbCondiciones" runat="server" /><asp:Label ID="lblCondiciones" runat="server" Text=" Acepto los términos y condiciones de uso."></asp:Label>
         <br />
         <br />
-        <asp:Button runat="server" class="btn btn-info" ID="btnParticipar" Text="Participá!" OnClick="btnParticipar_Click" />
+        <asp:Button runat="server" class="btn btn-info" ID="btnParticipar" Text="Participá!" OnClick="btnParticipar_Click" />--%>
         <%--================================           ↓Otra opción↓        ===============================================================================--%>
         <div class="col align-items-center text-right" style="padding-right: 0px;">
-                <asp:CheckBox ID="CheckBox1" runat="server" /><asp:Label ID="Label1" runat="server" style="padding-right: 10px;" Text=" Acepto los términos y condiciones de uso.  "></asp:Label>
-                <asp:Button runat="server" class="btn btn-info" ID="Button1" Text="Participá!" OnClick="btnParticipar_Click" />
+                <asp:CheckBox ID="ckbCondiciones" runat="server" /><asp:Label ID="lblCondiciones" runat="server" style="padding-right: 10px;" Text=" Acepto los términos y condiciones de uso.  "></asp:Label>
+                <asp:Button runat="server" class="btn btn-info" ID="btnParticipar" Text="Participá!" OnClick="btnParticipar_Click" />
         </div>
     </div>
 </asp:Content>

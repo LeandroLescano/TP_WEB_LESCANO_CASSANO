@@ -30,7 +30,6 @@ namespace TP_WEB_LESCANO_CASSANO
 			cli.DNI = Convert.ToInt32(txtDNI.Text);
 			cli.Email = txtEmail.Text;
 			cli.FechaRegistro = System.DateTime.Now;
-
 		}
 
         protected void altaVoucher(Voucher vou, int IDCliente)
@@ -42,7 +41,7 @@ namespace TP_WEB_LESCANO_CASSANO
             vou.Producto.ID = Convert.ToInt32(Session["Producto"].ToString());
             vou.FechaRegistro = System.DateTime.Now;
         }
-		protected void mandarMail (string email, string codvou)
+		protected void mandarMail (string email, string codvou, string nombre)
 		{
 			MailMessage mail = new MailMessage();
 			SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
@@ -50,7 +49,7 @@ namespace TP_WEB_LESCANO_CASSANO
 			mail.From = new MailAddress("promocode.noreply@gmail.com");
 			mail.To.Add(email);
 			mail.Subject = "Sorteo";
-			mail.Body = "Felicidades! estas oficialmente participando del sorteo con el codigo'" + codvou + "'.";
+			mail.Body = "Felicidades "+ nombre +"! Estas oficialmente participando del sorteo con el codigo: \n\n '" + codvou + "'\n\n ¡Mucha suerte!";
 
 			SmtpServer.Port = 587;
 			SmtpServer.Credentials = new System.Net.NetworkCredential("promocode.noreply@gmail.com", "promocode123");
@@ -69,7 +68,7 @@ namespace TP_WEB_LESCANO_CASSANO
 				altaCliente(cliente);
 				cliente.ID = negocio.agregarCliente(cliente);
                 altaVoucher(voucher, cliente.ID);
-				mandarMail(cliente.Email, voucher.CodigoVoucher);
+				mandarMail(cliente.Email, voucher.CodigoVoucher, cliente.Nombre);
 				negocioV.agregarVoucher(voucher);
 				Response.Redirect("~/Felicitaciones.aspx");
 			}
@@ -77,7 +76,7 @@ namespace TP_WEB_LESCANO_CASSANO
 			{
                 altaVoucher(voucher, cliente.ID);
                 negocioV.agregarVoucher(voucher);
-				mandarMail(cliente.Email, voucher.CodigoVoucher);
+				mandarMail(cliente.Email, voucher.CodigoVoucher, cliente.Nombre);
 				Response.Redirect("~/Felicitaciones.aspx");
             }
 		}
