@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Felicitaciones.aspx.cs" Inherits="TP_WEB_LESCANO_CASSANO.Felicitaciones" %>
+﻿<%@ Page Title="Felicitaciones" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Felicitaciones.aspx.cs" Inherits="TP_WEB_LESCANO_CASSANO.Felicitaciones" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <br />

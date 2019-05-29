@@ -11,7 +11,7 @@ namespace TP_WEB_LESCANO_CASSANO
         public static void RegisterRoutes(RouteCollection routes)
         {
             var settings = new FriendlyUrlSettings();
-            settings.AutoRedirectMode = RedirectMode.Permanent;
+            settings.AutoRedirectMode = RedirectMode.Off;
             routes.EnableFriendlyUrls(settings);
         }
     }
