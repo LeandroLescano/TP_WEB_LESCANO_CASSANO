@@ -20,3 +20,14 @@ C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negoci
 C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.dll
 C:\Users\Tateh\Desktop\Repos Git\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.pdb
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\Negocio.dll
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\Negocio.pdb
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\AccesoDatos.dll
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\Dominio.dll
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\AccesoDatos.pdb
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\bin\Debug\Dominio.pdb
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.dll
+C:\Users\tatil\Desktop\Repos git\TP_WEB_LESCANO_CASSANO\Negocio\obj\Debug\Negocio.pdb

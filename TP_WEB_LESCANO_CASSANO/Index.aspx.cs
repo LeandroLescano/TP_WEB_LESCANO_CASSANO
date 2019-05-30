@@ -16,17 +16,13 @@ namespace TP_WEB_LESCANO_CASSANO
 
         }
 
-        protected void btnSiguiente_Click(object sender, EventArgs e)
-		{
-             Response.Redirect("~/Premios.aspx");
-		}
-
         [System.Web.Services.WebMethod]
         public static string verVoucher(string Codigo)
         {
             VoucherNegocio negocio = new VoucherNegocio();
             if (negocio.comprobarVoucher(Codigo))
             {
+                HttpContext.Current.Session.Add("CodigoVoucher", Codigo);
                 return "Existe";
             }
             else

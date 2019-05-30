@@ -29,7 +29,6 @@
     <div class="input-group mb-3">
         <asp:TextBox ID="txtCodigo" runat="server" class="form-control" placeholder="A1B2C3D4E5F6G7H8I9J0K1L2M3N4Ñ5O"></asp:TextBox>
         <div class="input-group-append">
-            <asp:Button runat="server" class="btn btn-info" style="display:none" ID="btnSiguiente"  Text="Siguiente" OnClick="btnSiguiente_Click" />
             <button class="btn btn-info" onclick="getCodigo(); return false;">Siguiente</button>
         </div>
     </div>

@@ -41,14 +41,14 @@
             </Scripts>
         </asp:ScriptManager>
         <nav class="navbar navbar-dark bg-dark">
-            <span class="navbar-brand mb-0 h1" style="font-family:'Roboto', sans-serif;">Promo gana!</span>
+            <span class="navbar-brand mb-0 h1" style="font-family:'Roboto', sans-serif;">Promo ganá!</span>
         </nav>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer class="fixed" style="left: 50px">
-                <p>&copy; <%: DateTime.Now.Year %> - Nombre del comercio. Todos los derechos reservados.</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Promo ganá!. Todos los derechos reservados.</p>
             </footer>
         </div>
 
