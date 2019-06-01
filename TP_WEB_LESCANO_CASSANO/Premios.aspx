@@ -28,7 +28,7 @@
                     <div class="card-body">
                         <h5 class="card-title" id="title0"></h5>
                         <p class="card-text" id="desc0"></p>
-                        <asp:Button ID="btnTV" class="btn btn-info" runat="server" Text="Elegir" OnClick="btnTV_Click" />
+                        <asp:Button ID="btn0" class="btn btn-info" runat="server" Text="Elegir" OnClick="seleccionarProd" />
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     <div class="card-body">
                         <h5 class="card-title" id="title1"></h5>
                         <p class="card-text" id="desc1"></p>
-                        <asp:Button ID="btnAire" class="btn btn-info" runat="server" Text="Elegir" OnClick="btnAire_Click" />
+                        <asp:Button ID="btn1" class="btn btn-info" runat="server" Text="Elegir" OnClick="seleccionarProd" />
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                     <div class="card-body">
                         <h5 class="card-title" id="title2"></h5>
                         <p class="card-text" id="desc2"></p>
-                        <asp:Button ID="btnCel" class="btn btn-info" runat="server" Text="Elegir" OnClick="btnCel_Click" />
+                        <asp:Button ID="btn2" class="btn btn-info" runat="server" Text="Elegir" OnClick="seleccionarProd" />
                     </div>
                 </div>
             </div>

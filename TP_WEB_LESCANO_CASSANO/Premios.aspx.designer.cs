@@ -13,30 +13,30 @@ namespace TP_WEB_LESCANO_CASSANO {
     public partial class WebForm1 {
         
         /// <summary>
-        /// Control btnTV.
+        /// Control btn0.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnTV;
+        protected global::System.Web.UI.WebControls.Button btn0;
         
         /// <summary>
-        /// Control btnAire.
+        /// Control btn1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAire;
+        protected global::System.Web.UI.WebControls.Button btn1;
         
         /// <summary>
-        /// Control btnCel.
+        /// Control btn2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCel;
+        protected global::System.Web.UI.WebControls.Button btn2;
     }
 }

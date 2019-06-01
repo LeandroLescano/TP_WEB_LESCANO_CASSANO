@@ -19,25 +19,12 @@ namespace TP_WEB_LESCANO_CASSANO
             listado = negocio.listarProductos();
         }
 
-        protected void seleccionarProd(int ID)
+        protected void seleccionarProd(object sender, EventArgs e)
         {
-            Session.Add("Producto", ID);
+            Button btn = (Button)sender;
+            int IDProducto = Convert.ToInt32(btn.ID.Substring(3, 1));
+            Session.Add("Producto", IDProducto);
             Response.Redirect("~/Formulario.aspx");
-        }
-
-        protected void btnTV_Click(object sender, EventArgs e)
-        {
-            seleccionarProd(1);
-        }
-
-        protected void btnAire_Click(object sender, EventArgs e)
-        {
-            seleccionarProd(2);
-        }
-
-        protected void btnCel_Click(object sender, EventArgs e)
-        {
-            seleccionarProd(3);
         }
     }
 }
